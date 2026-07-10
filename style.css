@@ -332,10 +332,13 @@ nav a:hover{
 .hero-content{
 
     position:relative;
-
     z-index:2;
 
-    max-width:700px;
+    max-width:650px;
+
+    margin-left:8%;
+
+    margin-right:auto;
 
 }
 
