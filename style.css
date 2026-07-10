@@ -311,7 +311,7 @@ nav a:hover{
 
     overflow:hidden;
 
-    background:url("/images/background.png") center center/cover no-repeat;
+    background:url("images/background.png") center center/cover no-repeat;
 
 }
 
