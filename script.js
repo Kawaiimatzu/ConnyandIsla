@@ -311,3 +311,104 @@ lightbox.addEventListener("click",(e)=>{
     }
 
 });
+
+const coffeeBtn = document.querySelector(".coffee-btn");
+const coffeeCard = document.querySelector(".coffee-card");
+
+if (coffeeBtn) {
+
+    coffeeBtn.addEventListener("click", function(e){
+
+        if(window.innerWidth <= 768){
+
+            e.preventDefault();
+
+            coffeeCard.classList.toggle("show");
+
+        }
+
+    });
+
+}
+
+const card = document.querySelector(".coffee-id");
+
+if(card){
+
+card.addEventListener("mousemove",(e)=>{
+
+const rect = card.getBoundingClientRect();
+
+const x = e.clientX - rect.left;
+const y = e.clientY - rect.top;
+
+const rotateY = (x - rect.width/2)/18;
+const rotateX = -(y - rect.height/2)/18;
+
+card.style.transform =
+`perspective(900px)
+ rotateX(${rotateX}deg)
+ rotateY(${rotateY}deg)
+ scale(1.05)`;
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform="";
+
+});
+
+}
+
+/* ===========================
+   PREMIUM SPARKLES
+=========================== */
+
+const sparkleContainer = document.getElementById("sparkle-container");
+
+const colors = [
+
+"#2563EB",   // Blue
+"#EF4444",   // Red
+"#FFFFFF"    // White
+
+];
+
+document.addEventListener("mousemove",(e)=>{
+
+    // daghan particles kada lihok
+    for(let i=0;i<10;i++){
+
+        const sparkle=document.createElement("div");
+
+        sparkle.className="sparkle";
+
+        const size=Math.random()*4+2;
+
+        sparkle.style.width=size+"px";
+        sparkle.style.height=size+"px";
+
+        const color=colors[Math.floor(Math.random()*colors.length)];
+
+        sparkle.style.background=color;
+
+        sparkle.style.boxShadow=`0 0 8px ${color}`;
+
+        sparkle.style.left=e.clientX+(Math.random()*18-9)+"px";
+        sparkle.style.top=e.clientY+(Math.random()*18-9)+"px";
+
+        sparkle.style.setProperty("--x",(Math.random()*60-30)+"px");
+        sparkle.style.setProperty("--y",(Math.random()*60-30)+"px");
+
+        sparkleContainer.appendChild(sparkle);
+
+        setTimeout(()=>{
+
+            sparkle.remove();
+
+        },800);
+
+    }
+
+});
