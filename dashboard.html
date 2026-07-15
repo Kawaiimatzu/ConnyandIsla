@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Conny & Isla</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>
+
+                Conny<span>&</span>Isla
+
+            </h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+<li>
+
+    <a href="calendar.html">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        Content Calendar
+
+    </a>
+
+</li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-photo-film"></i>
+
+                    Gallery
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-video"></i>
+
+                    Videos
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Analytics
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                    Social Accounts
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+<header class="topbar">
+
+    <div class="top-left">
+
+        <button class="menu-toggle" id="menuToggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <div class="welcome-text">
+
+            <h2 id="greeting">
+
+                Good Morning
+
+            </h2>
+
+            <p id="liveDate">
+
+                Tuesday, July 15, 2026
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="top-center">
+
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search anything...">
+
+        </div>
+
+    </div>
+
+    <div class="top-right">
+
+        <button class="icon-btn">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span class="badge">3</span>
+
+        </button>
+
+        <button class="icon-btn">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+        <div class="profile">
+
+            <img src="Images/0.jpeg" alt="Profile">
+
+            <div>
+
+                <h4 id="userName">
+
+                    Conny & Isla
+
+                </h4>
+
+                <span>
+
+                    Administrator
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+        <!-- WELCOME -->
+
+<section class="welcome">
+
+    <div>
+
+        <h1>
+
+            Dashboard
+
+        </h1>
+
+        <p>
+
+            Manage all your social media content in one place.
+
+        </p>
+
+    </div>
+
+<button
+class="new-post-btn"
+onclick="location.href='calendar.html'">
+
+    <i class="fa-solid fa-calendar-days"></i>
+
+    Open Calendar
+
+</button>
+
+</section>
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h2>12</h2>
+
+                <p>Scheduled Posts</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-images"></i>
+
+                <h2>248</h2>
+
+                <p>Gallery Images</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-video"></i>
+
+                <h2>39</h2>
+
+                <p>Videos</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <h2>185K</h2>
+
+                <p>Total Reach</p>
+
+            </div>
+
+        </section>
+
+        <section class="social-connect">
+
+    <div class="social-card facebook">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+        <h3>Facebook</h3>
+
+        <span>Connected</span>
+
+    </div>
+
+    <div class="social-card instagram">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <h3>Instagram</h3>
+
+        <span>Connected</span>
+
+    </div>
+
+    <div class="social-card tiktok">
+
+        <i class="fa-brands fa-tiktok"></i>
+
+        <h3>TikTok</h3>
+
+        <span>Not Connected</span>
+
+    </div>
+
+    <div class="social-card youtube">
+
+        <i class="fa-brands fa-youtube"></i>
+
+        <h3>YouTube</h3>
+
+        <span>Connected</span>
+
+    </div>
+
+</section>
+
+        <!-- CONTENT -->
+
+        <section class="dashboard-grid">
+
+            <!-- RECENT -->
+
+            <div class="panel">
+
+                <div class="panel-title">
+
+                    <h3>
+
+                        Recent Activity
+
+                    </h3>
+
+                </div>
+
+                <ul class="activity">
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Uploaded Stockholm Reel.mp4
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Scheduled Facebook Post
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Connected Instagram
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Uploaded Sailing Gallery
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- QUICK ACTION -->
+
+            <div class="panel">
+
+                <div class="panel-title">
+
+                    <h3>
+
+                        Quick Actions
+
+                    </h3>
+
+                </div>
+
+<div class="quick-buttons">
+
+    <button onclick="location.href='calendar.html'">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        Open Calendar
+
+    </button>
+
+    <button onclick="location.href='gallery.html'">
+
+        <i class="fa-solid fa-image"></i>
+
+        Media Library
+
+    </button>
+
+    <button onclick="location.href='analytics.html'">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        Analytics
+
+    </button>
+
+    <button onclick="location.href='settings.html'">
+
+        <i class="fa-solid fa-gear"></i>
+
+        Settings
+
+    </button>
+
+</div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Content Calendar | Conny & Isla</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Conny<span>&</span>Isla</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Content Calendar
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-images"></i>
+                    Media Library
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-video"></i>
+                    Videos
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="calendar-header">
+
+            <div class="header-left">
+
+                <h1>Content Calendar</h1>
+
+                <p>
+                    Plan, organize and schedule your weekly content.
+                </p>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+<div class="calendar-top-grid">
+
+    <!-- LEFT CARD -->
+    <div class="calendar-card">
+
+        <div class="card-header">
+
+            <div>
+
+                <h2>
+                    <i class="fa-solid fa-gear"></i>
+                    Calendar Settings
+                </h2>
+
+                <p>
+                    Configure your weekly content schedule.
+                </p>
+
+            </div>
+
+            <button class="edit-btn">
+                Edit
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <div class="setting-group">
+
+            <h4>Scheduled Weekly Content Types</h4>
+
+            <div class="tags">
+
+                <span>Local Video & Images</span>
+
+                <span>Landing Page</span>
+
+            </div>
+
+        </div>
+
+        <div class="setting-group">
+
+            <h4>Content Topics</h4>
+
+            <div class="tags">
+
+                <span>Office & Retail</span>
+
+                <span>Lease & Financing</span>
+
+                <span>Market Report</span>
+
+                <span>Industrial Property</span>
+
+            </div>
+
+        </div>
+
+        <div class="setting-group">
+
+            <h4>Location</h4>
+
+            <div class="tags">
+
+                <span>Meridian, Idaho</span>
+
+                <span>Boise, Idaho</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT CARD -->
+
+    <div class="calendar-card">
+
+        <div class="card-header">
+
+            <div>
+
+                <h2>
+
+                    <i class="fa-solid fa-link"></i>
+
+                    Connect Your Social Media
+
+                </h2>
+
+                <p>
+
+                    Connected platforms
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="social-list">
+
+            <div class="social-item">
+
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </div>
+
+                <span class="connected">Connected</span>
+
+            </div>
+
+            <div class="social-item">
+
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </div>
+
+                <span class="connected">Connected</span>
+
+            </div>
+
+            <div class="social-item">
+
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                    YouTube
+                </div>
+
+                <span class="connected">Connected</span>
+
+            </div>
+
+            <div class="social-item">
+
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </div>
+
+                <span class="not-connected">
+                    Connect
+                </span>
+
+            </div>
+
+            <div class="social-item">
+
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    TikTok
+                </div>
+
+                <span class="not-connected">
+                    Connect
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+CALENDAR TOOLBAR
+========================================== -->
+
+<div class="calendar-toolbar">
+
+    <div class="toolbar-left">
+
+        <button class="primary-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add A Content
+
+        </button>
+
+        <button class="secondary-btn">
+
+            <i class="fa-solid fa-circle-pause"></i>
+
+            Pause Calendar
+
+        </button>
+
+    </div>
+
+    <div class="toolbar-right">
+
+        <button class="week-btn" id="prevWeek">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+        <h3 id="weekTitle">
+
+            Jul 15 - Jul 28, 2026
+
+        </h3>
+
+        <button class="week-btn" id="nextWeek">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Calendar -->
+<div id="calendarGrid" class="calendar-grid"></div>
+
+
+<!-- ======================================
+ADD CONTENT MODAL
+====================================== -->
+
+<div id="contentModal" class="content-modal">
+
+    <div class="modal-container">
+
+        <!-- LEFT SIDEBAR -->
+
+        <div class="modal-sidebar">
+
+            <div class="modal-logo">
+
+                <h2>Create Content</h2>
+
+                <p>Select Platform</p>
+
+            </div>
+
+            <button class="platform-btn active">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                YouTube
+
+            </button>
+
+            <button class="platform-btn">
+
+                <i class="fa-brands fa-facebook"></i>
+
+                Facebook
+
+            </button>
+
+            <button class="platform-btn">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                Instagram
+
+            </button>
+
+            <button class="platform-btn">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+                TikTok
+
+            </button>
+
+            <button class="platform-btn">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                LinkedIn
+
+            </button>
+
+            <button class="platform-btn">
+
+                <i class="fa-solid fa-globe"></i>
+
+                Landing Page
+
+            </button>
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>YouTube Content</h2>
+
+                <button id="closeModal">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+<div class="composer">
+
+    <!-- Upload Area -->
+
+    <div class="upload-area">
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        <h2>Drag & Drop Media</h2>
+
+        <p>Upload video or images</p>
+
+        <button class="browse-btn">
+
+            Browse Files
+
+        </button>
+
+        <input type="file"
+               id="mediaUpload"
+               hidden
+               multiple>
+
+    </div>
+
+    <!-- Title -->
+
+    <div class="form-group">
+
+        <label>Post Title</label>
+
+        <input
+            type="text"
+            id="postTitle"
+            placeholder="Commercial Real Estate Update">
+
+    </div>
+
+    <!-- Caption -->
+
+    <div class="form-group">
+
+        <label>Caption</label>
+
+        <textarea
+            id="postCaption"
+            placeholder="Write your caption..."></textarea>
+
+    </div>
+
+    <!-- Hashtags -->
+
+    <div class="form-group">
+
+        <label>Hashtags</label>
+
+        <input
+            type="text"
+            id="hashtags"
+            placeholder="#commercialrealestate #investing">
+
+    </div>
+
+    <!-- Schedule -->
+
+    <div class="schedule-grid">
+
+        <div>
+
+            <label>Date</label>
+
+            <input type="date" id="postDate">
+
+        </div>
+
+        <div>
+
+            <label>Time</label>
+
+            <input type="time" id="postTime">
+
+        </div>
+
+    </div>
+
+    <button class="publish-btn">
+
+        Publish to Calendar
+
+    </button>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </main>
+
+</div>
+
+<script src="js/calendar.js"></script>
+
+</body>
+
+</html>

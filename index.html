@@ -15,7 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,83 +24,96 @@
     <!-- HEADER -->
     <!-- ========================= -->
 
-    <header id="header">
+<header id="header">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="logo">
-                <a href="#">
-                    Conny<span>&</span>Isla
+        <div class="logo">
+            <a href="#">
+                Conny<span>&</span>Isla
+            </a>
+        </div>
+
+<nav>
+
+    <!-- Desktop Menu -->
+    <ul class="desktop-nav">
+
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="login.html" class="login-btn">
+                <span>Login</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <!-- Overlay -->
+    <div class="mobile-overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-top">
+
+            <button id="closeMenu">✕
+
+            </button>
+
+        </div>
+
+        <ul>
+
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
                 </a>
-            </div>
+            </li>
 
-            <nav>
+            <li>
+    <a href="https://buymeacoffee.com/YOURUSERNAME"
+       target="_blank"
+       class="buy-coffee-link">
 
-                <ul>
+        ☕ Buy Us a Coffee
 
-                    <li><a href="#hero">Home</a></li>
-
-                    <li><a href="#about">About</a></li>
-
-                    <li><a href="#videos">Videos</a></li>
-
-                    <li><a href="#gallery">Gallery</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-
-            </nav>
-
-<div class="coffee-wrapper">
-
-    <a href="#" class="btn subscribe-btn coffee-btn">
-        Buy Us a Coffee
     </a>
+</li>
 
-    <div class="coffee-id">
-
-        <div class="lanyard">
-            <div class="clip"></div>
-            <div class="strap left"></div>
-            <div class="strap right"></div>
-        </div>
-
-        <div class="id-card">
-
-            <div class="id-header">
-                ☕ BUY US A COFFEE
-            </div>
-
-            <div class="id-body">
-
-                <p>❤️ Support our journey</p>
-
-                <p>
-                    Every coffee helps us create more adventures.
-                </p>
-
-                <a href="https://buymeacoffee.com/YOURUSERNAME"
-                   target="_blank"
-                   class="coffee-link">
-
-                    ☕ Support Us
-
-                </a>
-
-            </div>
-
-        </div>
+        </ul>
 
     </div>
 
-</div>
+</nav>
 
-</div>
+  </div>
 
-        </div>
+</header>
 
-    </header>
+<a href="https://buymeacoffee.com/YOURUSERNAME"
+   target="_blank"
+   class="floating-coffee">
+
+    ☕ Buy Us a Coffee
+
+</a>
+
 
     <!-- ========================= -->
     <!-- HERO -->
@@ -154,7 +167,7 @@
 
             <div class="about-image">
 
-                <img src="Images/about.jpeg" alt="Conny and Isla">
+                <img src="Images/about.png" alt="Conny and Isla">
 
             </div>
 
@@ -324,8 +337,8 @@
 
 <div class="gallery-grid">
 
-    <a href="Images/4.jpeg" class="gallery-item">
-        <img src="Images/4.jpeg" alt="">
+    <a href="Images/4.png" class="gallery-item">
+        <img src="Images/4.png" alt="">
     </a>
 
     <a href="Images/5.jpeg" class="gallery-item">
@@ -336,12 +349,12 @@
         <img src="Images/6.jpeg" alt="">
     </a>
 
-    <a href="Images/7.jpeg" class="gallery-item">
-        <img src="Images/7.jpeg" alt="">
+    <a href="Images/7.png" class="gallery-item">
+        <img src="Images/7.png" alt="">
     </a>
 
-    <a href="Images/8.jpeg" class="gallery-item">
-        <img src="Images/8.jpeg" alt="">
+    <a href="Images/8.png" class="gallery-item">
+        <img src="Images/8.png" alt="">
     </a>
 
     <a href="Images/9.jpeg" class="gallery-item">
@@ -352,12 +365,12 @@
         <img src="Images/10.jpeg" alt="">
     </a>
 
-    <a href="Images/11.jpeg" class="gallery-item">
-        <img src="Images/11.jpeg" alt="">
+    <a href="Images/11.png" class="gallery-item">
+        <img src="Images/11.png" alt="">
     </a>
 
-    <a href="Images/12.jpeg" class="gallery-item">
-        <img src="Images/12.jpeg" alt="">
+    <a href="Images/12.png" class="gallery-item">
+        <img src="Images/12.png" alt="">
     </a>
 
     <a href="Images/14.jpeg" class="gallery-item">
@@ -368,8 +381,8 @@
         <img src="Images/15.jpeg" alt="">
     </a>
 
-        <a href="Images/16.jpeg" class="gallery-item">
-        <img src="Images/16.jpeg" alt="">
+        <a href="Images/0.jpeg" class="gallery-item">
+        <img src="Images/0.jpeg" alt="">
     </a>
 
 </div>
@@ -540,7 +553,7 @@
 
     <div id="sparkle-container"></div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

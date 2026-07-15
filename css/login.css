@@ -1,0 +1,247 @@
+:root{
+
+    --blue:#0B2D5C;
+
+    --red:#EF4444;
+
+    --white:#ffffff;
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Inter,sans-serif;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+
+    url("../Images/background.png")
+
+    center center/cover no-repeat;
+
+}
+
+.background-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        rgba(11,45,92,.75),
+
+        rgba(0,0,0,.45)
+
+    );
+
+}
+
+.login-wrapper{
+
+    position:relative;
+
+    width:1200px;
+
+    max-width:95%;
+
+    display:grid;
+
+    grid-template-columns:1fr 500px;
+
+    z-index:2;
+
+}
+
+.left-panel{
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:60px;
+
+}
+
+.left-panel h1{
+
+    font-family:Montserrat;
+
+    font-size:70px;
+
+}
+
+.left-panel span{
+
+    color:#EF4444;
+
+}
+
+.left-panel p{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.login-card{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.login-card h2{
+
+    color:white;
+
+    font-size:40px;
+
+}
+
+.subtitle{
+
+    color:#ddd;
+
+    margin:10px 0 40px;
+
+}
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+.input-group label{
+
+    color:white;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:30px;
+
+    color:white;
+
+}
+
+.options a{
+
+    color:#EF4444;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#EF4444;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#ff5b5b;
+
+}
+
+@media(max-width:900px){
+
+.login-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.left-panel{
+
+display:none;
+
+}
+
+}
